@@ -39,12 +39,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app',
     'maintenance_mode',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -85,6 +87,8 @@ DATABASES = {
     }
 }
 
+#updated cors
+CORS_ORIGIN_ALLOW_ALL = True
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
@@ -142,8 +146,10 @@ EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = "thesingleapp2019@gmail.com"
-EMAIL_HOST_PASSWORD = "TheSingleApp@2019"
+EMAIL_HOST_USER = "dessschatbot@gmail.com"
+EMAIL_HOST_PASSWORD = "btuzerrlavbbmorw"
+
+
 
 #maintanance mode
 #True --> on   ,  None --> OFF

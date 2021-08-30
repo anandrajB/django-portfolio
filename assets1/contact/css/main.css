@@ -250,7 +250,7 @@ iframe {
 
 .contact100-form-title {
     display: block;
-    font-family: cursive;
+    font-family: system-ui;
     font-size: 30px;
     color: #333333;
     line-height: 1.2;
@@ -507,5 +507,17 @@ textarea.input100 {
     .alert-validate::before {
         visibility: visible;
         opacity: 1;
+    }
+}
+
+@media screen {
+    .contact100-form-title {
+        display: block;
+        font-family: cursive;
+        font-size: 30px;
+        color: #333333;
+        line-height: 1.2;
+        text-align: center;
+        padding-bottom: 36px;
     }
 }

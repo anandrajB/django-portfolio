@@ -43,8 +43,8 @@
         <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
         <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
         <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#portfolio"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-        <li><a href="#services"><i class="bx bx-server"></i> <span>Services</span></a></li>
+        <li><a href="#services"><i class="bx bx-server"></i> <span>Summary</span></a></li>
+        <li><a href="#portfolio"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
         <li><a href="contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
       </ul>
     </nav><!-- .nav-menu -->
@@ -52,15 +52,14 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <br>
-  <br>
   <div id ='content'  >
 						{% include 'app/others/messages.html' %}
 						{% block content %} {% endblock content %}
 	</div>
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Anand Raj</h1>
+      <p>Hi There,</p>
+      <h1>I'm Anand Raj</h1>
       <p>I'm <span class="typed" data-typed-items="Developer,Designer,Photographer"></span></p>
       <div class="social-links">
         <a href="https://github.com/anandrajB?tab=repositories" target = _blank class="twitter"><i class="bx bxl-github"></i></a>
@@ -271,10 +270,9 @@
             <div class="resume-item">
               <h4>Junior Programmer</h4>
               <h5>DEC : 2020 - Present</h5>
-              <p><em>Chennai  </em></p>
+              <p><em>Desss inc , Chennai  </em></p>
               <ul>
                 <li>Experience in developing web services using <strong>Django</strong> rest framework . </li>
-                <li>Having knowledge in Agile Methodologies </li>
                 <li>Worked with CI/CD pipelines using <strong>Heroku</strong> and AWS </li>
                 <li>Knowledge about setting up Python <strong>REST API</strong> and CRUD</li>
                 <li>Performed server migrations in Linux server and managing Hosting panels in <strong>Plesk</strong> , Cpanel .</li>
@@ -283,7 +281,6 @@
           </div>
         </div>
         <div class = 'text-center'>
-        <br>
           {% comment %} button for both download and view based cv  {% endcomment %}
           {% comment %} <button type="button" class="btn btn-primary" style="border-radius: 25px;font-size: larger; background: #0563bb">Download CV</button>  {% endcomment %}
           <a href= "media/mediafiles/test.pdf" download ="ANAND-RAJ-B" class="btn btn-rounded btn-primary" style="border-radius: 25px;font-size: larger; background: #0563bb";>  Download CV   </a>
@@ -291,160 +288,7 @@
       </div>
     </section><!-- End Resume Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>My Projects </p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.gif" class="img-fluid" alt="">
-              <div class="portfolio-info" style="backdrop-filter:blur(10px);">
-                <h4>App 1</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.gif" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.gif" class="img-fluid" alt="">
-              <div class="portfolio-info" style="backdrop-filter:blur(10px);">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.gif" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/login.gif" class="img-fluid" alt="">
-              <div class="portfolio-info" style="backdrop-filter:blur(10px);">
-                <h4>App 2</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/login.gif" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.gif" class="img-fluid" alt="">
-              <div class="portfolio-info" style="backdrop-filter:blur(10px);">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.gif" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/chat.gif" class="img-fluid" alt="">
-              <div class="portfolio-info" style="backdrop-filter:blur(10px);">
-                <h4>Web 2</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/chat.gif" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info" style="backdrop-filter:blur(10px);">
-                <h4>App 3</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info" style="backdrop-filter:blur(10px);">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info" style="backdrop-filter:blur(10px);">
-                <h4>Card 3</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info" style="backdrop-filter:blur(10px);">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Services Section ======= -->
+<!-- ======= Services Section ======= -->
     <section id="services" class="services">
       <div class="container" data-aos="fade-up">
 
@@ -490,7 +334,7 @@
                 <i class="bx bx-refresh"></i>
               </div>
               <h4>CI / CD</h4>
-              <p>Knowledge in working with continuous deployment using <strong>Heroku</strong> and AWS .</p>
+              <p>Knowledge in working with CI / CD and building pipelines using <strong>Heroku , azure devops , AWS EB</strong> </p>
             </div>
           </div>
 
@@ -534,13 +378,152 @@
           </div>
 
         </div>
-        <br>
-      <div class = 'text-center'>
-        <a href= "contact" role='button' class="btn btn-primary me-2" style="border-radius: 25px;font-size: larger; background: #0563bb";> <img src='assets/img/chat.gif' width ='25'/>  Contact Me </a>
-      </div>
       </div>
     </section><!-- End Services Section -->
 
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Projects</h2>
+          <p>My Projects </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.gif" class="img-fluid" alt="">
+              <div class="portfolio-info" style="backdrop-filter:blur(10px);">
+                <h4>Speedy scanner</h4>
+                <div class="portfolio-links">
+                  <a href="portfolio" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.gif" class="img-fluid" alt="">
+              <div class="portfolio-info" style="backdrop-filter:blur(10px);">
+                <h4>chatbot for websites</h4>
+                <div class="portfolio-links">
+                  <a href="portfolio" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/login.gif" class="img-fluid" alt="">
+              <div class="portfolio-info" style="backdrop-filter:blur(10px);">
+                <h4>custom user model </h4>
+                <div class="portfolio-links">
+                  <a href="portfolio" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.gif" class="img-fluid" alt="">
+              <div class="portfolio-info" style="backdrop-filter:blur(10px);">
+                <h4>doctor appointment and schedule tracker</h4>
+                <div class="portfolio-links">
+                  <a href="portfolio" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/chat.gif" class="img-fluid" alt="">
+              <div class="portfolio-info" style="backdrop-filter:blur(10px);">
+                <h4>Rasa chatbot </h4>
+                <div class="portfolio-links">
+                  <a href="portfolio" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% comment %} <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info" style="backdrop-filter:blur(10px);">
+                <h4>App 3</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="portfolio" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info" style="backdrop-filter:blur(10px);">
+                <h4>Card 1</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="portfolio" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info" style="backdrop-filter:blur(10px);">
+                <h4>Card 3</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="portfolio" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info" style="backdrop-filter:blur(10px);">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="portfolio" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div> {% endcomment %}
+
+        </div>
+        <br>
+        <div class = 'text-center'>
+        <a href= "contact" role='button' class="btn btn-primary me-2" style="border-radius: 25px;font-size: larger; background: #0563bb";> <img src='assets/img/chat.gif' width ='25'/>  Contact Me </a>
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    
     <!-- section for contact page -->
 
   </main><!-- End #main -->

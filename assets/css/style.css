@@ -337,15 +337,22 @@ h6 {
 @media (max-width: 992px) {
     #hero {
         text-align: center;
+        background-image: url("../img/anand.png");
+        text-align: center;
     }
     #hero h1 {
         font-size: 32px;
         line-height: 36px;
+        text-align: left;
     }
     #hero p {
         margin-top: 10px;
         font-size: 20px;
         line-height: 24px;
+        text-align: left;
+    }
+    #hero .social-links {
+        margin-top: 577px;
     }
 }
 

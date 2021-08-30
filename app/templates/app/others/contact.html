@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Contact V12</title>
+	<title>Contact</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -70,8 +70,6 @@
 							Send
 						</button>
 					</div>
-					<br>
-					<br>
 					<div id ='content'  >
 						{% include 'app/others/messages.html' %}
 						{% block content %} {% endblock content %}
@@ -80,7 +78,6 @@
 						<h2> Thanks {{name}}! </h2>
 						<p> we recieved your email and respond you shortly </p
 					</center>  {% endcomment %}
-					<br>
 					<br>
 					<div class="text-right" >
 						<button class="btn btn-primary" type="button" onclick = goBack() style="border-radius: 25px;font-size: larger; background: #0563bb; color:white;"><i class="fa fa-home"></i>  Home  </button>

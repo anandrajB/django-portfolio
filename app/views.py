@@ -58,7 +58,7 @@ def contact(request):
         
         '''.format(data['date_n'],data['when'],data['email'],data['name'],data['message'])
         #sender from settings.email to [receiver]
-        send_mail(data['name'], message, data['email'],['anand98.ar@gmail.com'])
+        send_mail(data['name'], message, data['email'],['anand98.ar@gmail.com'],fail_silently=False,)
         messages.success(request , 'Thank you ! we will get u back shortly , Have a good day')
         return HttpResponseRedirect('/')
     return render(request,'app/others/contact.html')
